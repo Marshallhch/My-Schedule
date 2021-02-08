@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Reset CSS Style */
+*{margin:0; padding:0; box-sizing:border-box;}
+body{font-size:14px; font-family:'Open Sans', sans-serif;}
+.clear:after{clear:both; display:block; content:'';}
+.center{width:100%; height:auto; max-width:980px; margin:auto;}
+ol, ul{list-style:none;}
+a{text-decoration: none; color:#111;}
+img{display:block;}
+button, input, textarea{outline:0; font-family:'Open Sans';-webkit-appearance: none;}
+input[type="checkbox"]{-webkit-appearance: auto; border-radius:0; border:1px solid #d0af51;}
+input::placeholder, textarea::placeholder{color:#d0af51;}
+input:focus, textarea:focus{background:#f8f8f8;}
+
+/* Contants Wrap Style */
+.wrap{width:100%; height:100%; background:#fbfbfb;}
+
+/* Header Style */
+header{width:100%; height:auto; background:indigo; color:#fff; text-align:center;}
+header .headerCenter{display:flex; align-items: center; justify-content: space-between;}
+header .headerCenter .mIcon{width:30px; height:auto; display:flex; flex-wrap:wrap; justify-content: flex-end;}
+header .headerCenter .mIcon span{width:100%; height:2px; background:#fff; display:block;}
+header .headerCenter .mIcon span:nth-child(1){}
+header .headerCenter .mIcon span:nth-child(2){margin:5px 0; width:50%;}
+header .headerCenter .mIcon span:nth-child(3){width:70%;}
+
+header h1{font-weight:400; font-size:22px; padding:10px 0;}
+
+/* Container Grid Style */
+.container{display:grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(5, minmax(100px, auto)); row-gap:10px; gap: 5px; padding:20px 0;}
+.container .item{background:#fff; border:1px solid #eee;}
+.container .item:nth-child(1){grid-row-start:1; grid-row-end:5; padding:30px; display:flex; align-items: center;justify-content: center;}
+.container .item:nth-child(6){grid-column-start:1; grid-column-end:3;}
+
+.graph-circle {position: relative; width:100%; height:100%;}
+.circle-graph-container {position: relative;display: flex; width:100%; height:100%; flex-wrap:wrap;}
+.graph-circle .totalTit{width:100%; height:auto;text-align:center;}
+.circle-graph {margin: 0 15px;position: relative;width: 100%;line-height: 1.2 !important;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+canvas {position: absolute;}

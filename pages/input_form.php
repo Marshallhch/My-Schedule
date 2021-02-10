@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Schedule Dashboard</title>
+  <title>Input Board</title>
 
   <!-- Awesome Font Link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -38,15 +38,16 @@
     <!-- Container -->
     <div class="center">
       <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
-        <div class="container">
+        <div class="inputContainer">
 
           <!-- total and each projects progress -->
           <?php include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"; ?>
 
+          <div class="item"></div>
+
           <div class="item btns">
             <button type="submit">진행률 수정</button>
-            <button type="button" onclick="javascript:location.href='/myschedule/pages/input_form.php'">진행 상황
-              작성</button>
+            <button type="button">진행 상황 작성</button>
             <button type="button">진행 상황 확인</button>
           </div>
 

@@ -117,15 +117,24 @@
               </div>
             </div>
           </div>
+
+          <div class="item btns">
+            <button type="button">진행률 수정</button>
+            <button type="button">진행 상황 작성</button>
+            <button type="button">진행 상황 확인</button>
+          </div>
+        </div>
+        <!-- end of container -->
       </form>
-      <div class="item btns">
-        <button type="button">진행률 수정</button>
-        <button type="button">진행 상황 작성</button>
-        <button type="button">진행 상황 확인</button>
-      </div>
     </div>
+    <!-- end of center -->
+
+    <footer>
+      <p>Designed by MyDesign : mydesign@no-site.com</p>
+    </footer>
+
   </div>
-  </div>
+  <!-- end of wrap -->
 
   <!-- script files load -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

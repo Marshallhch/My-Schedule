@@ -17,7 +17,7 @@
     <h3>Database Project</h3>
     <p>Progress Rate : <input type="text" value="<?=$sch_db?>" class="rateNum" name="sch_db_rate">% || Last
       Update :
-      <b>2021-02-09</b>
+      <b><?=$db_date?></b>
     </p>
     <div class="pfBarBox">
       <span class="pfBar"></span>
@@ -32,7 +32,7 @@
     <h3>API Project</h3>
     <p>Progress Rate : <input type="text" value="<?=$sch_api?>" class="rateNum" name="sch_api_rate">% || Last
       Update :
-      <b>2021-02-09</b>
+      <b><?=$api_date?></b>
     </p>
     <div class="pfBarBox">
       <span class="pfBar"></span>
@@ -47,7 +47,7 @@
     <h3>Renewal Project</h3>
     <p>Progress Rate : <input type="text" value="<?=$sch_ren?>" class="rateNum" name="sch_ren_rate">% || Last
       Update :
-      <b>2021-02-09</b>
+      <b><?=$ren_date?></b>
     </p>
     <div class="pfBarBox">
       <span class="pfBar"></span>
@@ -62,7 +62,7 @@
     <h3>WEB Planning Project</h3>
     <p>Progress Rate : <input type="text" value="<?=$sch_pla?>" class="rateNum" name="sch_pla_rate">% || Last
       Update :
-      <b>2021-02-09</b>
+      <b><?=$web_date?></b>
     </p>
     <div class="pfBarBox">
       <span class="pfBar"></span>

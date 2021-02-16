@@ -46,26 +46,10 @@
         ?>
 
         <div class="item boardBox">
-          <ul class="boardTable">
-            <li class="boardTitle">
-              <span class="boNum">번호</span>
-              <span class="boCate">종류</span>
-              <span class="boTit">제목</span>
-              <span class="boReg">작성일</span>
-            </li>
-            <li class="boardList">
-              <span class="boNum">3</span>
-              <span class="boCate">dbProject</span>
-              <span class="boTit">게시판 업로드 수정</span>
-              <span class="boReg">2021-02-16</span>
-            </li>
-            <li class="boardList">
-              <span class="boNum">3</span>
-              <span class="boCate">dbProject</span>
-              <span class="boTit">게시판 업로드 수정</span>
-              <span class="boReg">2021-02-16</span>
-            </li>
-          </ul>
+          <?php
+          $include_path=$_GET['key'];
+          include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/$include_path.php";
+          ?>
         </div>
 
         <div class="item btns">
@@ -88,6 +72,14 @@
   <script src="/myschedule/js/piechart.js"></script>
   <script src="/myschedule/js/custom.js"></script>
   <script src="/myschedule/js/total_avg.js"></script>
+  <script>
+  $(".boardList").hide();
+  $(".boardList").slice(0, 5).show();
+
+  $(".loadMore button").click(function() {
+    $(".boardList:hidden").slice(0, 5).show();
+  });
+  </script>
 </body>
 
 </html>

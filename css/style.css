@@ -38,7 +38,7 @@ canvas {position: absolute;}
 
 /* button box style */
 .btns{display:flex; align-items: center; justify-content: flex-end; padding:10px;}
-.btns button, a{border:1px solid indigo; background:indigo; color:#fff; font-weight:400; font-family:'Noto Sans KR'; padding:10px 30px;}
+.btns button, a.schInput{border:1px solid indigo; background:indigo; color:#fff; font-weight:400; font-family:'Noto Sans KR'; padding:10px 30px;}
 .btns button:nth-child(2){margin:0 5px;}
 
 /* Footer Style */
@@ -65,8 +65,8 @@ footer p{color:#fff; font-weight:400;}
 
 /* Schedule Board Page Style */
 .item.boardBox{padding:10px;}
-.item.boardBox .boardTable{width:100%; height:auto;}
-.item.boardBox .boardTable li:last-child{border-bottom:1px solid #ddd;}
+.item.boardBox .boardTable{width:100%; height:auto;border-bottom:1px solid #ddd;}
+.item.boardBox .boardTable li:last-child{}
 .item.boardBox .boardTable li:nth-child(odd){background:#eee;}
 .item.boardBox .boardTable .boardTitle,
 .item.boardBox .boardTable .boardList{width:100%; height:auto; display:flex; align-items: center; justify-content: center;}
@@ -78,3 +78,10 @@ footer p{color:#fff; font-weight:400;}
 .item.boardBox .boardTable span.boCate{width:20%;}
 .item.boardBox .boardTable span.boTit{width:50%;}
 .item.boardBox .boardTable span.boReg{width:20%;}
+
+.loadMore{width:100%; height:auto; margin-top:10px; text-align:center;} 
+.loadMore button{outline:0; border:1px solid indigo; background:indigo; padding:10px 30px; color:#fff; font-family:'Noto Sans KR';}
+
+.categoryTabs{width:100%; height:auto;}
+.categoryTabs a{display:inline-block; border:1px solid indigo; background:indigo; font-family:'Noto Sans KR'; color:#fff; padding: 5px 15px; margin-bottom:5px; font-weight:300;}
+.categoryTabs a.active{background:#fff; color:indigo;}

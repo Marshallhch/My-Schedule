@@ -17,20 +17,27 @@
             include $_SERVER['DOCUMENT_ROOT']."/myschedule/include/db_conn.php";
             $sql = "select * from sch_txt order by sch_txt_num desc";
             $board_result = mysqli_query($dbConn, $sql);
-
+            if(!$board_result){
+  ?>
+  <li class="boardList">
+    <span>데이터가 없습니다.</span>
+  </li>
+  <?php
+            } else {
             while($board_row = mysqli_fetch_array($board_result)){
               $bo_num = $board_row['sch_txt_num'];
               $bo_cate = $board_row['sch_txt_cate'];
               $bo_tit = $board_row['sch_txt_tit'];
               $bo_reg = $board_row['sch_txt_reg'];
-            ?>
+  ?>
   <li class="boardList">
     <span class="boNum"><?=$bo_num?></span>
     <span class="boCate"><?=$bo_cate?></span>
-    <span class="boTit"><a href="#"><?=$bo_tit?></a></span>
+    <span class="boTit"><a href="/myschedule/pages/detail_view.php?num=<?=$bo_num?>"><?=$bo_tit?></a></span>
     <span class="boReg"><?=$bo_reg?></span>
   </li>
   <?php
+              }
             }
             ?>
 </ul>

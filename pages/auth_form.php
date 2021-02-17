@@ -43,7 +43,7 @@
 
 <body>
   <div class="authWrap">
-    <form action="/myschedule/php/auth.php" name="authForm" class="authForm">
+    <form action="/myschedule/php/auth.php" name="authForm" class="authForm" method="post">
       <input type="password" placeholder="인증 코드를 입력해 주세요" name="authCode">
       <button type="submit">입장하기</button>
     </form>
